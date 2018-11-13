@@ -6,8 +6,8 @@
   * [x] Pay command
   * [x] Coins Command
   * [x] Coins leaderboard
-* [] Cooldown
-* [] Alias
+* [ ] Cooldown
+* [ ] Alias
 * [ ] Cooldown
 * [ ] Aliases system
 * [ ] Battle
