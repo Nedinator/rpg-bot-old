@@ -1,6 +1,5 @@
 # Plans
 
-
 * [x] Economy system
   * [x] Give coins at random
   * [x] Pay command
