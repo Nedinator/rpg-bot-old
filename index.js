@@ -13,8 +13,6 @@ mongoose.connect('mongodb://localhost/nedrpg', {
 });
 const Coins = require("./models/coins.js");
 
-
-
 fs.readdir("./commands/", (err, files) => {
 
   if (err) console.log(err);
@@ -32,7 +30,6 @@ fs.readdir("./commands/", (err, files) => {
   });
 
 });
-
 
 bot.on("ready", () => {
   console.log(bot.user.username + " is online.")
@@ -76,14 +73,9 @@ bot.on("message", async message => {
           res.coins = res.coins + coinstoadd;
           res.save().catch(err => console.log(err))
         }
-
-
       })
-
-
     }
   }
-})
-
+});
 
 bot.login(token.token)
