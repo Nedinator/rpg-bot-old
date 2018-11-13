@@ -1,4 +1,7 @@
+//First thing we need... discord.js! 
 const Discord = require("discord.js");
+
+//here i get the config and token file required for later use
 const config = require("./config.json");
 const token = require("./token.json");
 const bot = new Discord.Client();

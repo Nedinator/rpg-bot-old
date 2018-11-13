@@ -16,7 +16,9 @@ module.exports.run = async (bot, message, args) => {
 
   Coins.find({
     serverID: message.guild.id
-  }, (err, res) => {
+  }).sort([
+    ["coins", "descending"]
+  ]).exec((err, res) => {
     if(err) console.log(err);
 
     if(!res){
