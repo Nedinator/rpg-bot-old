@@ -41,7 +41,7 @@ module.exports.run = async (bot, message, args) => {
       }).then(collected => {
         if (collected.first().content === 'cancel') return message.reply("Canceled...").then(r => r.delete(10000));
         if (collected.first().content.toLowerCase() === 'accept') {
-          let chance = Math.floor(Math.random * 100) + 1;
+          let chance = Math.floor(Math.random() * 100) + 1;
           if (chance < 50) {
             //sender wins
             targetres.coins = targetres.coins - price;
