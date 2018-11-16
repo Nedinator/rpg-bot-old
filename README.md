@@ -7,9 +7,7 @@
   * [x] Coins leaderboard
 * [ ] Cooldown
 * [ ] Alias
-* [ ] Cooldown
-* [ ] Aliases system
-* [ ] Battle
+* [x] Battle
   * [ ] Profile
   * [ ] Level
   * [ ] Stats
