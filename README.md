@@ -7,7 +7,8 @@
   * [x] Coins leaderboard
 * [ ] Cooldown
 * [ ] Alias
-* [x] Battle
+* [ ] Battle
+  * [x] Base mechanics added
   * [ ] Profile
   * [ ] Level
   * [ ] Stats
