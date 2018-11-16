@@ -34,12 +34,12 @@ module.exports.run = async (bot, message, args) => {
       if (!targetres || targetres.coins < price) return message.reply("Sorry but the target doesn't have enough coins for that").then(r => r.delete(10000));
 
       const filter = m => m.author.id === target.id;
-      message.channel.send(target + " you have been challenged by " + message.author.username + " to accept type accept. You have 10 seconds").then(r => r.delete(10000));
+      message.channel.send(target + " you have been challenged by " + message.author + " for " + price + " coins. To accept type 'accept'. You have 10 seconds").then(r => r.delete(10000));
       message.channel.awaitMessages(filter, {
         max: 1,
         time: 10000
       }).then(collected => {
-        if (collected.first().content === 'cancel') return message.reply("Canceled...").then(r => r.delete(10000));
+        if (collected.first().content === 'cancel') return message.channel.send(target + ", Canceled... " + message.author).then(r => r.delete(10000));
         if (collected.first().content.toLowerCase() === 'accept') {
           let chance = Math.floor(Math.random() * 100) + 1;
           if (chance < 50) {
@@ -62,8 +62,7 @@ module.exports.run = async (bot, message, args) => {
           message.channel.send(embed);
         }
       }).catch(err => {
-        console.log(err)
-        message.reply("Time limit exceeded").then(r => r.delete(5000));
+        message.reply(" - " + target + " Time limit exceeded").then(r => r.delete(5000));
       })
 
     })
