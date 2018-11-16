@@ -1,6 +1,10 @@
 # Welcome
 
-Welcome to `NedRPG`. This is a open-source bot written in Discord.JS utilizing MongoDB using the npm package `mongoose`. I don't know what else to put here. 
+Welcome to `NedRPG`. This is a open-source bot written in Discord.JS utilizing MongoDB using the npm package `mongoose`. 
+
+## Discord Server
+
+To join the support and test server [click here](https://discord.gg/wJVNCZJ)
 
 ## Plans
 
