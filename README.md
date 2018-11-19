@@ -13,8 +13,10 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
   * [x] Pay command
   * [x] Coins Command
   * [x] Coins leaderboard
-* [ ] Cooldown
-* [ ] Alias
+* [ ] The basics  
+    * [ ] Cooldown
+    * [ ] Alias
+    * [ ] Help command (*use module.exports.help or manually add?*)
 * [ ] Battle
   * [x] Base mechanics added
   * [ ] User data collection comes in here? what do i need in
@@ -26,8 +28,18 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
   * [ ] Level
   * [ ] Stats
   * [ ] Record Command (W/L, %, lvl, etc)
-  * [ ] Challenging opponents by using awaitMessages
+    * [ ] Is this going to be on the main profile or a different collection?
+  * [x] Challenging opponents by using awaitMessages
 * [ ] Buy command
+    * [ ] Shop items (*possibly as a collection in the db?*) here: 
+* [ ] Pets(?)
+    * [ ] Train and battle others. 
+        * [ ] To train you would go to DMs with bot and you'd fight random ai 
+            * [ ] ok time to decide if i really wanna care that much about image manipulation or not
+    * [ ] Automated battles based on attack, defence, and other traits
+    * [ ] Traits
+        * [ ] Randomized
+        * [ ] Manually added(?)
 * [ ] Profile
   * [ ] Level
   * [ ] Stats
