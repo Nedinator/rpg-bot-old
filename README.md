@@ -32,6 +32,12 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
   * [x] Challenging opponents by using awaitMessages
 * [ ] Buy command
     * [ ] Shop items (*possibly as a collection in the db?*) here: 
+* [ ] Weapon System?
+    * [ ] Start out as 4 types and different levels? (like [rs](https://runescape.com)?)
+* [ ] Profile
+  * [ ] Level
+  * [ ] Stats
+  * [ ] Record (W/L)
 * [ ] Pets(?)
     * [ ] Train and battle others. 
         * [ ] To train you would go to DMs with bot and you'd fight random ai 
@@ -40,7 +46,3 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
     * [ ] Traits
         * [ ] Randomized
         * [ ] Manually added(?)
-* [ ] Profile
-  * [ ] Level
-  * [ ] Stats
-  * [ ] Record (W/L)
