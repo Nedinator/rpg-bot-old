@@ -20,6 +20,8 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
   * [ ] User data collection comes in here? what do i need in
     * [ ] Win Loss ratio
     * [ ] Level/XP
+  * [ ] Classes?
+    * [ ] Names? (Warrior, Mage, Archer, etc?)  *these all suck so please suggest some class names*
   * [ ] Profile
   * [ ] Level
   * [ ] Stats
