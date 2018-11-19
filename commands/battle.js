@@ -4,6 +4,7 @@ mongoose.connect('mongodb://localhost/nedrpg', {
   useNewUrlParser: true
 });
 const Coins = require("../models/coins.js");
+const battleUtils = require("../utils/battle.js");
 module.exports.run = async (bot, message, args) => {
   //this is where the actual code for the command goes
   await message.delete();
@@ -36,14 +37,17 @@ module.exports.run = async (bot, message, args) => {
         if (collected.first().content === 'cancel') return message.channel.send(target + ", Canceled... " + message.author).then(r => r.delete(10000));
         if (collected.first().content.toLowerCase() === 'accept') {
           let chance = Math.floor(Math.random() * 100) + 1;
+          console.log(chance)
           if (chance < 50) {
             //sender wins
+            battleUtils.recordSave(message, message.member, target);
             targetres.coins = targetres.coins - price;
             res.coins = res.coins + price;
             embed.addField("Winner", message.author);
             embed.addField("Loser", target);
           } else {
             //target wins
+            battleUtils.recordSave(message, target, message.member);
             targetres.coins = targetres.coins + price;
             res.coins = res.coins - price;
             embed.addField("Winner", target);
