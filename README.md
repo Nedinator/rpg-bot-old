@@ -16,7 +16,8 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
 * [ ] The basics  
     * [ ] Cooldown
     * [ ] Alias
-    * [ ] Help command (*use module.exports.help or manually add?*)
+    * [x] Help command (*use module.exports.help or manually add?*)
+        * [ ] Made it manually for now, will update to automatic later    
 * [ ] Battle
   * [x] Base mechanics added
   * [ ] User data collection comes in here? what do i need in
@@ -26,7 +27,7 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
     * [ ] Names? (Warrior, Mage, Archer, etc?)  *these all suck so please suggest some class names*
   * [ ] Profile
   * [ ] Level
-  * [ ] Stats
+  * [x] Record handling
   * [ ] Record Command (W/L, %, lvl, etc)
     * [ ] Is this going to be on the main profile or a different collection?
   * [x] Challenging opponents by using awaitMessages
@@ -41,7 +42,6 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
 * [ ] Pets(?)
     * [ ] Train and battle others. 
         * [ ] To train you would go to DMs with bot and you'd fight random ai 
-            * [ ] ok time to decide if i really wanna care that much about image manipulation or not
     * [ ] Automated battles based on attack, defence, and other traits
     * [ ] Traits
         * [ ] Randomized

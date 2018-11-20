@@ -1,6 +1,6 @@
 {
   "name": "discordjs_template",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "description": "A template for Discordjs with command handler and example file.",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
     "discord.js": "^11.3.2",
     "fs": "0.0.1-security",
     "mongoose": "^5.3.11",
-    "ms": "^2.1.1"
+    "ms": "^2.1.1",
+    "node-random-name": "^1.0.1"
   }
 }

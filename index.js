@@ -32,13 +32,14 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 bot.on("ready", () => {
+  bot.user.setActivity("!help", {type: "PLAYING"})
   console.log(bot.user.username + " is online.")
 });
 
 bot.on("message", async message => {
   //a little bit of data parsing/general checks
   if (message.author.bot) return;
-  if (message.channel.type === 'dm') return;
+  
   let content = message.content.split(" ");
   let command = content[0];
   let args = content.slice(1);
@@ -49,11 +50,12 @@ bot.on("message", async message => {
     let commandfile = bot.commands.get(command.slice(prefix.length));
     if (commandfile) commandfile.run(bot, message, args);
   } else {
+    if (message.channel.type === 'dm') return;
     let chance = Math.floor(Math.random() * 100) + 1;
     if (chance > 50) {
       //here is where the coins are added.
 
-      let coinstoadd = Math.ceil(Math.random() * 15) + 5;
+      let coinstoadd = Math.ceil(Math.random() * 10) + 5;
 
       Coins.findOne({
         userID: message.author.id,

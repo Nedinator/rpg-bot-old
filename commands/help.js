@@ -10,8 +10,8 @@ module.exports.run = async (bot, message, args) => {
     .setColor("BLURPLE") //who doesn't love a good blurple
     .setThumbnail(bot.user.displayAvatarURL)
     .setDescription("Current version: v" + pkg.version + ". Prefix: " + conf.prefix)
-    .addField("Current active", "battle, coins, help, pay, wealthy")
-    .addField("Coming Soon", "profile, shop, level, class");
+    .addField("Current active", "battle, coins, help, pay, wealthy, getpet, mypet")
+    .addField("Coming Soon", "profile, shop, level, class, trainpet, battlepet");
 
   message.channel.send(embed)
 }

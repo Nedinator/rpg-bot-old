@@ -6,7 +6,8 @@ const profileSchema = mongoose.Schema({
   serverID: String,
   class: {type: String, default: "None"},
   wins: {type: Number, default: 0},
-  losses: {type: Number, default: 0}
+  losses: {type: Number, default: 0},
+  traits: {type: [], default: []}
 });
 
 module.exports = mongoose.model("Profile", profileSchema)
