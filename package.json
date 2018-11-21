@@ -10,9 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.3.2",
+    "ffmpeg-static": "^2.4.0",
     "fs": "0.0.1-security",
     "mongoose": "^5.3.11",
     "ms": "^2.1.1",
-    "node-random-name": "^1.0.1"
+    "node-random-name": "^1.0.1",
+    "ytdl-core": "^0.28.0"
   }
 }

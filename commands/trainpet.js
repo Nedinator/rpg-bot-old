@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
         }else{
             //Gonna handle this w a util for the training part. maybe generate a wild pet? random stats based 
             //on your pet? same stats different trait? 
-            
+            petUtil.petTrain(pet);
         }
     });
 }

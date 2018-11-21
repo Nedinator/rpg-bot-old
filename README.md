@@ -42,7 +42,9 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
 * [ ] Pets(?)
     * [ ] Train and battle others. 
         * [ ] To train you would go to DMs with bot and you'd fight random ai 
-    * [ ] Automated battles based on attack, defence, and other traits
+    * [ ] Cost to get a pet. (1000 coins?)
     * [ ] Traits
         * [ ] Randomized
         * [ ] Manually added(?)
+    * [ ] Command to reroll. First free, cost after that? 
+        * [ ] price for reroll formula : rerollcount * 100? (make it simple.)
