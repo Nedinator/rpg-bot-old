@@ -5,6 +5,7 @@ const profileSchema = mongoose.Schema({
   username: String,
   serverID: String,
   class: {type: String, default: "None"},
+  level: {type: Number, default: 1},
   wins: {type: Number, default: 0},
   losses: {type: Number, default: 0},
   traits: {type: [], default: []}
