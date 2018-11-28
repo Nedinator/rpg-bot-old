@@ -1,8 +1,9 @@
 const mongoose = require("mongoose")
+const Profile = require("../models/profile.js");
+
 mongoose.connect('mongodb://localhost/nedrpg', {
     useNewUrlParser: true
 });
-const Profile = require("../models/profile.js");
 
 module.exports.recordSave = (message, winner, loser) => {
     Profile.findOne({
