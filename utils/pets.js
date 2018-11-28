@@ -1,5 +1,5 @@
 const randomName = require("node-random-name");
-const pet = require("../models/pets.js")
+const Pet = require("../models/pets.js")
 
 module.exports.petTrain = (pet) => {
     console.log(pet.petStats[0]);
