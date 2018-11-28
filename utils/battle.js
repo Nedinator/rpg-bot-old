@@ -28,8 +28,8 @@ module.exports.recordSave = (message, winner, loser) => {
             userID: loser.id,
             serverID: message.guild.id
         }, (err, res) => {
-            if(err) console.log(err)
-            if(!res){
+            if (err) console.log(err)
+            if (!res) {
                 const newDoc = new Profile({
                     userID: loser.id,
                     username: loser.user.username,
@@ -38,7 +38,7 @@ module.exports.recordSave = (message, winner, loser) => {
                     losses: 1
                 })
                 newDoc.save().catch(err => console.log(err));
-            }else{
+            } else {
                 res.losses = res.losses + 1;
                 res.save().catch(err => console.log(err));
             }
