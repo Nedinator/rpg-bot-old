@@ -2,6 +2,7 @@ const Discord = require('discord.js')
 const randomName = require('node-random-name');
 const Pet = require("../models/pets.js");
 const Coins = require("../models/coins.js");
+
 module.exports.run = async (bot, message, args) => {
     //this is where the actual code for the command goes
     await message.delete();
@@ -17,9 +18,9 @@ module.exports.run = async (bot, message, args) => {
                 userID: message.author.id,
                 serverID: message.guild.id
             }, (err, coins) => {
-                if(err) console.log(err)
-                if(!coins) return message.reply("Sorry, you don't have any coins.");
-                if(coins.coins < 1000) return message.reply("Sorry, you need 1000 coins to buy a pet.")
+                if (err) console.log(err)
+                if (!coins) return message.reply("Sorry, you don't have any coins.");
+                if (coins.coins < 1000) return message.reply("Sorry, you need 1000 coins to buy a pet.")
                 coins.coins = coins.coins - 1000;
                 coins.save().catch(err => console.log(err));
             })
@@ -42,6 +43,7 @@ module.exports.run = async (bot, message, args) => {
         }
     })
 }
+
 //name this whatever the command name is.
 module.exports.help = {
     name: 'getpet'
