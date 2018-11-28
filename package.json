@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "author": "Ned from {TheSourceCode}",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^11.3.2",
     "ffmpeg-static": "^2.4.0",
