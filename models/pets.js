@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 const petSchema = mongoose.Schema({
     petName: String,
     petTrait: {type: String, default: 'None'},
@@ -10,4 +11,5 @@ const petSchema = mongoose.Schema({
     petTier: {type: Number, default: 1},
     petRerolls: {type: Number, default: 0}
 });
+
 module.exports = mongoose.model('Pets', petSchema)
