@@ -18,12 +18,12 @@ module.exports.run = async (bot, message, args) => {
     userID: message.author.id,
     serverID: message.guild.id
   }, (err, res) => {
-    if(err) console.log(err);
+    if (err) console.log(err);
 
-    if(!res){
+    if (!res) {
       embed.setColor("RED");
       embed.addField("Error", "Sorry, you don't have any coins in this server...");
-    }else{
+    } else {
       embed.setColor("BLURPLE");
       embed.addField(res.username, res.coins + " coins.");
     }

@@ -1,8 +1,4 @@
 const Discord = require('discord.js')
-const mongoose = require("mongoose")
-mongoose.connect('mongodb://localhost/nedrpg', {
-  useNewUrlParser: true
-});
 const Coins = require("../models/coins.js");
 const battleUtils = require("../utils/battle.js");
 module.exports.run = async (bot, message, args) => {

@@ -40,11 +40,12 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
   * [ ] Stats
   * [ ] Record (W/L)
 * [ ] Pets(?)
+    * [ ] Buying pet
+        * [ ] Confirmation for 1000 coins. 
     * [ ] Train and battle others. 
         * [ ] To train you would go to DMs with bot and you'd fight random ai 
     * [ ] Cost to get a pet. (1000 coins?)
-    * [ ] Traits
-        * [ ] Randomized
-        * [ ] Manually added(?)
     * [ ] Command to reroll. First free, cost after that? 
-        * [ ] price for reroll formula : rerollcount * 100? (make it simple.)
+        * [x] price for reroll formula : rerollcount * 100? (make it simple.)
+        * [ ] Reset stats on reroll
+        * [ ] Confirmation with awaitMessages()

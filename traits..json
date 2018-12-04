@@ -1,0 +1,8 @@
+{
+    "traits": {
+        "Serious": "agility",
+        "Calm": "attack",
+        "Relaxed": "defense",
+        "Delusional": "strength"
+    }
+}
