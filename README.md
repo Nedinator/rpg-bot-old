@@ -39,12 +39,15 @@ To join the support and test server [click here](https://discord.gg/wJVNCZJ)
   * [ ] Level
   * [ ] Stats
   * [ ] Record (W/L)
-* [ ] Pets(?)
-    * [ ] Buying pet
-        * [ ] Confirmation for 1000 coins. 
-    * [ ] Train and battle others. 
-        * [ ] To train you would go to DMs with bot and you'd fight random ai 
-    * [ ] Cost to get a pet. (1000 coins?)
+* [ ] Pet System
+    * [x] Buying pet
+        * [x] Confirmation for 1000 coins. 
+    * [x] Train
+        * [x] To train you would go to DMs with bot and you'd fight dummy. 
+        * [x] Hit damage based on strength only and experience based on hit.
+    * [ ] Pet Battle    
+        * [ ] Outcome based on all 4 skills
+        * [ ] Battle log. (Save to mongo?)
     * [ ] Command to reroll. First free, cost after that? 
         * [x] price for reroll formula : rerollcount * 100? (make it simple.)
         * [ ] Reset stats on reroll
